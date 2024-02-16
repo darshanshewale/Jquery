@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function()
+            {
+                $("h1").css("border","5px solid yellow");
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+    <h1>Jquery element selector</h1>
+    <button>border</button>
+    <pre>
+        Jquery element is used to select and modify HTML element based on the element name
+    </pre>
+
+    <h1>Jquery Multiple elements selectors</h1>
+    <pre>
+        The jquery multiple elements selectors is used to select multiple elements of an HTML document 
+
+        parameter:
+        element: this paramter is required to specify the elements to be selected 
+    </pre>
+
+    <script>
+        // $("*").css("background-color","lightgreen"); selects all the elements of the document 
+
+
+        $("h1,pre,button").css("background-color","lightgreen");
+    </script>
+
+
+
+
+</body>
+</html>

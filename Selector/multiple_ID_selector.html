@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <style>
+    #a2 {
+      background-color: green;
+      height: 100px;
+      width: 100px;
+      margin: 0 auto;
+      color: white;
+    }
+  </style>
+  <body>
+    <h1>jquery Multiple ID selectors</h1>
+    <pre>
+        HTML Document and is to select the elements with different ID's at the same time using jquery
+
+        
+        @select the ID's of different elements and then use each() method to apply the CSS property on all 
+        selected ID's elements
+        
+
+    </pre>
+
+    <p id="a1" style="font-size: 19px; font-weight: bold"></p>
+
+    <div id="a2">This is Div box</div>
+
+    <button onclick="fun()">click here</button>
+
+    <p id="a3" style="color: green; font-size: 24px; font-weight: bold"></p>
+
+    <script>
+      $("#a1").text(
+        "click on button to select multiple ID's and change their background"
+      );
+
+      function fun() {
+        $("#a1,#a2,#a3").each(function () {
+          $(this).css("background-color", "pink");
+        });
+
+        $("#a3").text("background-color of all element is changed");
+      }
+    </script>
+  </body>
+</html>

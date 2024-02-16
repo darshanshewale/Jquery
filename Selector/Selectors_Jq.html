@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Jquery selectors</h1>
+    <pre>
+    jquery selectors are used to select the the HTML elements and allows you to manipulate the HTML elements in a way It selects the HTML 
+    elements on a variable parameters such as their name, classes , id ,type ,attribute, attribute values etc All selectors in jquery 
+    are selected using a special sign i.e doller sign and parentheses
+    '
+    $("selector-name");
+
+   </pre
+    >
+
+    <h1 class="a1">Element selector</h1>
+    <pre>
+    The element selector selects the element on the basis of its name
+   </pre
+    >
+
+    <button>hide</button>
+
+    <script>
+      $("button").click(function () {
+        $(".a1").hide();
+      });
+    </script>
+
+    <h1 id="a2">Id Selector</h1>
+    <pre>
+        The id selector selects the element on the basis of its id.
+    </pre>
+
+    <button id="b1">hide</button>
+
+    <script>
+      $("#b1").click(function () {
+        $("#a2").hide();
+      });
+    </script>
+
+    <h1 class="a3">Class selector</h1>
+    <pre>
+        The class selectors selects the element on the basis of its class
+    </pre>
+
+    <button class="b2">Hide</button>
+
+    <script>
+      $(".b2").click(function () {
+        $(".a3").hide();
+      });
+    </script>
+  </body>
+</html>

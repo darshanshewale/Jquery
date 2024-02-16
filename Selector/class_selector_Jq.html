@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".a1").css("background-color","yellow");
+        });
+
+        $(document).ready(function(){
+            $(".a2,.a3").css("font-size","20px");
+        });
+    </script>
+</head>
+<body>
+    <h1 class="a1">Jquery .class selector</h1>
+    <pre class="a1">
+        The jquery class selector specifies the class for an element to be selected It should not begin with a number.
+        It gives styling to several HTML element 
+    </pre>
+
+    <h1 class="a2">Jquery Multiple element selector</h1>
+    <pre class="a3">
+        The jquery multiple class selector is used to select multiple classes of an HTML document 
+
+        syntax:
+        $(".class1,.class2,.class3,...")
+
+        parameter:This parameter is required to specify the class of the elements to be selected 
+    </pre>
+</body>
+</html>
