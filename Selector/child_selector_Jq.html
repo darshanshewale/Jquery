@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("h1:first-child").css("background-color","orange");
+            $("pre:last-child").css("background-color","lightgreen");
+        })
+    </script>
+</head>
+<body>
+
+    <div>
+        <h1>Jquery : first child selector</h1>
+        <pre>
+            Jquery :first-child selector is used to select every element that is the first child of its parent element
+    
+            $("selector:first-child");
+        </pre>
+    </div>
+
+    <div>
+        <h1>Jquery Last-child selector </h1>
+        <pre>
+            Jquery :last-child selector every element that is the last child of it parent 
+
+        </pre>
+    </div>
+
+    <div>
+        <h1>Jquery First-of-type-selector</h1>
+        <pre>
+            Jquery :first-of-type selector is used to select all element that are the first child of a particular type of their parent
+
+            $(":first-of-type")
+        </pre>
+    </div>
+    
+</body>
+</html>

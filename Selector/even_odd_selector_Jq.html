@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("tr:even").css("background-color","lightgreen");
+            $("tr:odd").css("background-color","orange")
+        })
+    </script>
+
+
+
+</head>
+<body>
+    <h1>Jquery :even selector</h1>
+    <pre>
+        The jquery :even selector used to select an even number index from the elements the number of the index start from 0. The working
+        is the same as odd selectors but for even numbers
+    </pre>
+
+    <h1>Jquery :odd selector</h1>
+    <pre>
+        Jquery :odd selector is used to select an odd number index from the elements.The number of indexes starts from 0. The working is the same
+        as :even selectors but for odd Numbers.
+    </pre>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Loaction</th>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>Rakesh</td>
+            <td>Mumbai</td>
+        </tr>
+    </table>
+</body>
+</html>
