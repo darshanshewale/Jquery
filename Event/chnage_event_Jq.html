@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function()
+            {
+                $("input").change();
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <h1>Jquery change Method</h1>
+    <pre>
+        The jquery change() is an inbuilt method that is used to detect the change in the value of input field 
+        This method works only on the "input , textarea and select " elements.
+
+        $(selector).change(function)
+
+        parameter: it accept an optional parameter "function"
+    </pre>
+    <button>click here</button>
+    <p>Enter value:</p>
+    <input value="Hellocoders" onchange="alert(this.value)" type="text">
+</body>
+</html>

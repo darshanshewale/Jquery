@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("p").bind("click",function(){
+                alert("Given paragraph was clicked.");
+            });
+        });
+    </script>
+
+    <style>
+        p{
+            display: block;
+            padding: 50px;
+            width: 280px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery Blind</h1>
+    <pre>
+        The jquery blind() is an inbuilt method that is used to attach one or more event handlers for selected 
+        elements and this method specifies a function to run when an event occurs
+
+        $(selector).blind(event,data,function);
+
+        parameter:It accept three parameters that are specified below 
+        1)event:This is an event type that is passed to the selected elements
+        2)data: This is the data that can be shown over the selected element 
+        3)function : this is the function that is performed by the selected elements
+    </pre>
+
+    <p>click me</p>
+</body>
+</html>

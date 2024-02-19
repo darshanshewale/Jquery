@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).fadeOut();
+            });
+        });
+    </script>
+
+    <style>
+        P{
+            display: block;
+            width: 300px;
+            padding: 20px;
+            font-size: 30px;
+            border: 2px solid green;
+        }
+    </style>
+
+</head>
+<h1>Jquery click Method</h1>
+<pre>
+    The Jquery click() is an inbuilt method that start the click event or attaches a function to run when a click event occurs.
+
+    $(selector).click(function);
+
+    parameter: it accepts an optional parameter "function" which is used to run when a click event occurs
+</pre>
+
+<p >Happy coding </p>
+<body>
+    
+</body>
+</html>

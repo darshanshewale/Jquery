@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        #i5
+        {
+            width: 100px;
+            height: 100px;
+            border-radius: 0px;
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Jquery_Event</h1>
+    <pre>
+        Event refers to the actions performed by the site visitor during their interactivity with the website (or webpage) There can be various types
+        of event such as 
+        1)user clicks on the button
+        2)user moves mouse pointer over an image
+        3)User pressed and key from keyboard etc
+
+        Method Name:
+        1)Click:get invoked when the user clicks on the particular HTML element
+        2)dbclick: gets invoked when the user double clicks on the particular HTML element
+        3)mouseenter:gets invoked when mouse pointer enters the particular HTML element
+        4)mouseleave:gets invokes when mouse pointer is removed from the particular HTML element which was selected earlier 
+        5)Mousedown:gets invoked when mouse left,right or middle button is pressed while the mouse pointer is over the HTML element
+        6)mouseup : gets invoked when mouse left ,right or middle button is released while the mouse pointer is over the HTML element
+        7)Hover : gets invoked when mouse pointer enter and leaves the HTML element. It is a combination of mouseenter() and Mouseleave() Method
+
+
+        <h1>Get and Set Method</h1>
+
+        jquery has various method to get the value of an attribute and set the attribute to specific value There method are powerful enough
+        to the change the website content and its style 
+        1)text()- This method is used to get or set the text content of selected HTML element
+        2)html()- This method is used to get or set the content of selected elements 
+        3)val()- This method is used to get set the value of various from field in the webpage
+        4)attr()-This method is used to get or set the value of various attributes in the webpage
+        5)CSS()-This method is used to get or set the value of various CSS properties in the webpage 
+    </pre>
+
+    <p id="i1">welcome</p>
+    <p id="i2">learn and Explore</p>
+    <p >
+        <input type="text" id="i3" value="jquery is powerful">
+    </p>
+    <p id="i4" > Hello coders
+    </p>
+
+    <p>
+        <div id="i5"></div>
+    </p>
+    <button id="b1">Change Text</button>
+    <button id="b2">change HTML</button>
+    <button id="b3">change value</button>
+    <button id="b4">change alignment</button>
+    <button id="b5">change shape</button>
+    
+    <script>
+          
+        $("#b1").click(function(){
+            $("#i1").text("Welcome to coding club");
+        });
+
+        $("#b2").click(function(){
+            $('#i2').html("<b> Enrich your knowleadge.</b>");
+        });
+
+        $("#b3").click(function() { 
+            $("#i3").val("jQuery is best "); 
+        }); 
+        $("#b4").click(function() { 
+            $("#i4").attr("align", "center"); 
+        }); 
+        $("#b5").click(function() { 
+            $("#i5").css("border-radius", "50px"); 
+        }); 
+
+    </script>
+</body>
+</html>
