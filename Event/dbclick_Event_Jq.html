@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("p").dblclick(function(){
+                $(this).fadeOut();
+            });
+        });
+    </script>
+
+    <style>
+        P{
+            display: block;
+            width: 300px;
+            padding: 20px;
+            font-size: 30px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Jquery dblclick 
+    </h1>
+    <pre>
+        The Jquery dbclick is an inbuilt method that is used to  trigger the double click event to occur This method occurs
+        when the selected element will be double-clicked 
+
+        syntax:
+        $(selector).dbclick(args);
+    </pre>
+
+    <p>Hello coders</p>
+    
+</body>
+</html>

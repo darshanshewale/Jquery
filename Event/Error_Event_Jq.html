@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("img").error(function () {
+                $("img").replaceWith(
+                    "<h3>Error occurs</h3>");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Jquery Error Method</h1>
+    <pre>
+        The error() Method in Jquery is used when an element encounters an error that is the element is not loaded correctly 
+        The error() method attaches a function to run when an error event occurs or it triggers the error event
+        
+        $(selector).error(function)
+    </pre>
+    <div style="background-color:yellow;">
+        <img src="https//image.jpg"> 
+    </div>
+    <div style="background-color:green">
+
+        <h3> The image will be replaced with specified
+            text if the image above encounters an error.
+        </h3>
+</body>
+
+</html>

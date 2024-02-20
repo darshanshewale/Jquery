@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("div").delegate("h2","click",function(){
+                $("h2").css("background-color","green");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Jquery delegate Method</h1>
+    <pre>
+        The delegate Method in Jquery is used to add one or more event handlers to the specified element that are children 
+        of selected elements and are also used to specify a function to run whenever the event occurs 
+
+        syntax:
+        $(selector).delegate(childselector,event,data,function)
+
+        parameter: This method accept four parameters as mentioned above and described below
+
+        childselector: It is required parameter and is used to specify one or more child elements attached to the event handler
+        event: It is a required parameter and is used to specify one or more events attached to the elements Multiple 
+               event values are separated by space and it must be a valid event 
+        data:  It is an optional parameter and is used to specify the additional data to pass along the function 
+        function :  it is a required parameter and is used to specify the function to run when the event occurs 
+
+    </pre>
+
+    <div style="background-color: lightgreen;">
+        <h2>Happy coding</h2>
+    </div>
+</body>
+</html>

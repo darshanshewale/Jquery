@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+    <script>
+        $(document).ready(function(){
+            $('div').on("click","button",function(event){
+                $(event.delegateTarget).css("background-color","green");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Jquery event,delegatetarget property</h1>
+    <pre>
+        Jquery event.delegate target property is used to return element where the current-called Jquery event handler was atttached
+    </pre>
+<div>
+    <h2>Happy coding</h2>
+    <button>click</button>
+
+</div>
+   
+</body>
+</html>

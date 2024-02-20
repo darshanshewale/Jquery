@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("h1 , h2 , p").click(function(event){
+                alert(event.currentTarget.innerHTML);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Jquery event.currentTarget Property</h1>
+    <pre>
+        Jquery event.currentTarget property is used to return the current DOM element within the event bubbling phase.The event.currentTarget  
+        is typically equal to "this".
+    </pre>
+
+    event.currentTarget 
+
+    parameter:
+    event:It is a required parameter and this parameter comes from the event binding function
+
+    <h1>Happy conding</h1>
+    <h2>jquery event.currentTarget Property</h2>
+    <p>
+        <b>Note</b>
+        click on each HTML element
+    </p>
+</body>
+</html>

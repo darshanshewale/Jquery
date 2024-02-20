@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#ClickMe").on(
+          "click",
+          {
+            msg: " says hi to",
+            name: "viru",
+          },
+          sayHello
+        );
+
+        $("#ClickMe").on(
+          "click",
+          {
+            msg: "GFG says Hi!!",
+          },
+          sayHello
+        );
+
+        $("#ClickMe").on("click", sayHello);
+
+        function sayHello(event) {
+          if (event.data == null) {
+            alert("No name or msg provided");
+          } else {
+            alert(
+              "Hello " +
+                event.data.msg +
+                (event.data.name != null ? " " + event.data.name : "")
+            );
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Event Data Property</h1>
+    <pre>
+        Jquery event.data property is used to contain the optional data which is passed to an event  method The data is passed
+        when the currently excuting handler is bound
+    </pre>
+
+    Parameter: @Event : It is the parameter That is used to specify the name of
+    the event type on the selector
+
+    <input id="ClickMe" type="button" value="clickme" />
+  </body>
+</html>
