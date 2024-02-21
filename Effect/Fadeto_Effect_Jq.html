@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>jquery FadeTo</h1>
+    <pre>
+        The fadeTo method is an inbuilt method in jquery that  is used to change the opacity of the selected element
+
+        syntax: $(selector).fadeTo(speed,opacity,easing,call_function)
+    </pre>
+    
+    <p>This will fade out</p>
+    <p>This will not </p>
+
+    <script>
+        $("p:first").click(function(){
+            $(this).fadeTo("slow",0.33);
+        })
+    </script>
+</body>
+</html>

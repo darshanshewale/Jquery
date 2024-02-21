@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+   
+
+    <style>
+        #d1{
+            border: 1px solid black;
+            padding-top: 40px;
+            height: 140px;
+            background: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>FadeIn method</h1>
+    <pre>
+        The fadeIn method in jquery is used to chnage the opacity of selected elements from hidden to visible 
+        The hidden elements will not be display
+
+        $(selector).fadeIn(speed,easing,callback)
+    </pre>
+
+    <h1>Fadout method </h1>
+    <pre>
+        The Fadeout Method in jquery is used to chnage the level of opacity for selected element from visible to hidden
+        by using this method the faded element will not occupy any space
+        $(selector).fadeIn(speed,easing,callback)
+
+    </pre>
+
+    
+
+    <pre>
+
+        parameter:
+        @speed : it is an optional parameter and used to specify the speed of the fading effect. The default value of speedis 400
+        millisecond The possible value of speed are (millisecond ,slow, fast)
+
+        @easing: it is an optional parameter and used to specify the speed of element to different point of animation 
+        the defualt value of easing is swing The possible value of easing are 
+        @swing 
+        @linear
+
+        @callback: it is optional parameter The callback function is executed after fadeIn() method is completed
+         
+    </pre>
+    
+   
+
+    <div id="d1">
+        <h1>Happy coding</h1>
+    </div>
+    <br>
+
+    <button id="b1">
+        FadeIn
+    </button>
+
+    <button id="b2">FadeOut</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#d1").fadeIn(1000);
+            });
+            $("#b2").click(function(){
+                $("#d1").fadeOut(1000);
+            })
+        });
+    </script>
+
+    
+</body>
+</html>

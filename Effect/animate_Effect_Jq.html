@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#box").animate({
+                    width:"300px"
+                });
+                $("#box").animate({
+                    height:"300px"
+                });
+            });
+        });
+    </script>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Jquery animate </h1>
+    <pre>
+        The animate Method is an inbuilt method in jquery which is used to change the state if the element with CSS style 
+        This method can also be used to chnage the CSS property to create the animated effect for the selected element 
+
+        (selector).animate({style},para1,para2,para3);
+
+        style: it helps to set the new CSS property 
+        para1: It is an optional parameter and is used to set the speed of the parameter and its default value is 400 millisecond
+        para2: It is optional and this specificies the speed of the element at different positions 
+        para3: it is an optional function that is used to be performed after the animation is complete
+    </pre>
+
+    <div id="box">
+    </div>
+    <button id="b1">click here</button>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+    <script>
+            $(document).ready(function () { 
+                    $("#b1").click(function () { 
+                        $("div").animate({ 
+                            height: 200 
+                        }, 2000); 
+                        $("div").animate({ 
+                            width: 200 
+                        }, 2000); 
+                        $("div").animate({ 
+                            height: 100 
+                        }, 2000); 
+                        $("div").animate({ 
+                            width: 100 
+                        }, 2000); 
+                        $("div").animate({ 
+                            height: 200 
+                        }, 2000); 
+                        $("div").animate({ 
+                            width: 200 
+                        }, 2000); 
+                        $("div").animate({ 
+                            height: 100 
+                        }, 2000); 
+                        $("div").animate({ 
+                            width: 100 
+                        }, 2000); 
+                    }); 
+                    $("#b2").click(function () { 
+                        $("div").clearQueue(); 
+                    }); 
+            }); 
+    </script>
+
+    <style>
+        div{
+            background:green ;
+            height: 100px;
+            width: 100px;
+        }
+        button{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>jquery clearqueue </h1>
+    <pre>
+        The Jquery clearqueue method removes all items from the queue that have not yet been run Note that when a function has started 
+        to run it runs until it is completed
+
+        $(selector).clearqueue(name);
+    </pre>
+    <div></div>
+    <button id="b1">Start</button>
+    <button id="b2">Stop</button>
+</body>
+</html>

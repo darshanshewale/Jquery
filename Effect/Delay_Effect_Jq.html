@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#d1").delay("slow").fadeIn();
+                $("#d2").delay("fast").fadeIn();
+                $("#d3").delay(1000).fadeIn();
+                $("#d4").delay(4000).fadeIn();
+            });
+        });
+        
+    </script>
+
+
+</head>
+<body>
+    <h1>Delay Method</h1>
+    <pre>
+        Jquery delay Method is an inbuilt that is used to set a timer to delay the execution of the next item in the queue
+
+        $(selector).delay(para1,para2);
+          
+        parameter:
+        It accept tow parameters which are specified below 
+
+        @para1: It specifies the speed of the delay 
+        @para2: It is optional and specifies the name of the queue 
+
+        return value:
+        It returns the selected element with specified speed
+    </pre>
+
+
+    <button>click me </button>
+    <br><br>
+
+    <div id="d1" style="width:50px;height:50px;display:none; background-color: lightgreen; "></div>
+    <br>
+    <div id="d2" style="width:50px;height:50px;display:none; background-color: green; "></div>
+    <br>
+    <div id="d3" style="width:50px;height:50px;display:none; background-color: orange; "></div>
+    <br>
+    <div id="d4" style="width:50px;height:50px;display:none; background-color: yellow; "></div>
+
+
+
+
+</body>
+</html>
