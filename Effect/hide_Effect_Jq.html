@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide(1000);
+            });
+        });
+    </script>
+
+    <style>
+        div{
+            width: 50%;
+            height: 80px;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid green;
+            font-size: 30px;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hide Method</h1>
+    <pre>
+        Jquery hide() method is used to hide the selector element it acts like the display:none property of CSS and removes the selected
+        element fromt the document 
+
+        $(element_selector).hide(duration,easing,call_function);
+
+        parameter:It accepts three parameters which are specfies below
+        @Duration: it specifies the speed of the hide effect
+        @Easing: it specifies the speed of the element at different points of animation
+        @call_function: This is call-back function to be executed after the hide operation 
+    </pre>
+
+    <div>
+        <p>Happy coding</p> 
+    </div>
+
+    <button>Click here</button>
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function(){
+            $("p").click(function(){
+                var div=$("div");
+
+                div.animate({
+                    left:"+=200"
+                },2000);
+                div.animate({
+                    height:200
+                },"slow");
+                div.animate({
+                    width:150
+                },"slow")
+                div.animate({
+                    height:100
+                },"slow")
+                div.animate({
+                    width:60
+                },"slow")
+                div.animate({
+                    left:"-=200",
+                    top:"+=100"
+                },"2000")
+
+                $("span").text(div.queue().length);
+
+            });
+        });
+    </script>
+
+
+    
+
+<style>
+    div{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 35px;
+        margin-top: 10px;
+        background-color: green;
+    }
+    body{
+        width: 500px;
+        height: 250px;
+        border: 2px solid green;
+        padding: 20px;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Jquery queue</h1>
+    <pre>
+        The queue method is inbuilt method in jquery which is used to show the queue for functions to be executed on the selected elements 
+        In a queue one or more function wait for run
+
+        @the queue method can be used with the dequeue() Method
+        @An element may have several queues Generally there is only one defualt Jquery queue
+
+        $(selelctor).queue(queue_name)
+    </pre>
+
+    <p>The queue length is: <span></span></p>
+
+    <div></div>
+</body>
+</html>

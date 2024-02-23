@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("div").animate(
+            {
+              height: 200,
+            },
+            4000
+          );
+        });
+        $("#b2").click(function () {
+          $("div").finish();
+        });
+      });
+    </script>
+
+    <style>
+      div {
+        background: green;
+        height: 100px;
+        width: 100px;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Finish Method</h1>
+    <pre>
+        The Finish is an inbuilt method in jquery which is used to stop the animations running at the present timer
+
+        $(selector).Finish();
+    </pre>
+
+    <div></div>
+
+    <button id="b1">start</button>
+    <button id="b2">stop</button>
+  </body>
+</html>

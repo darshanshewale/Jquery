@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("h1").slideDown();
+            })
+        })
+        $(document).ready(function(){
+            $("#b2").click(function(){
+                $("h2").slideToggle();
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <h1>SlidDown</h1>
+    <pre>
+        The slideDown in Jquery is used to check the visibility of selected elements or to show the hidden elements It works on two type 
+        of hidden elements
+
+        @elements hidden using jquery Method
+        @Elements hiddent using display:none is CSS
+
+        $(selector).slideDown(speed,easing,callback)
+    </pre>
+
+    <h1>slideToggle Method</h1>
+    <pre>
+        The slideToggle Method in jqeury is used to show the hidden elements or hide the visible elements respectively i.e it toggles
+        between the slidup and sliddown 
+    </pre>
+
+    <h1 style="display: none;"> Happy Coding</h1>
+
+    <button id="b1">
+        click here
+    </button>
+
+    <h2> Hello </h2>
+    <button id="b2">click here </button>
+</body>
+</html>

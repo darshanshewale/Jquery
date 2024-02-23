@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <style>
+        div{
+            border: 3px solid black;
+            padding-top: 40px;
+            height: 140px;
+            background: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <h1>Jquery Show Effect</h1>
+   <pre>
+    The show method in Jquery is used to display the hidden and selected elements
+
+    Note: This method display the hidden element which are using CSS display: none property The element are not visible whose visibility is hidden
+
+    syntax:
+    $(selector).show(speed,easing,call-back)
+   </pre> 
+
+   <div>
+    <h1 style="text-align: center;">Happy Coding</h1>
+   </div>
+   <button>show</button>
+
+   <script>
+
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("div").show(1000);
+        })
+    })
+   </script>
+</body>
+</html>
