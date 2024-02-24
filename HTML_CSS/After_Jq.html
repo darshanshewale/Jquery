@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <style>
+        p
+        {
+            background: lightyellow;
+            display: block;
+            width: 150px;
+            padding: 10px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>After Method</h1>
+    <pre>
+        The after method is an inbuilt function in Jquery which is used to insert content, specified by the parameter for each selected 
+        element in the set of matched elements 
+
+        $(selector).after(A);
+
+    </pre>
+
+
+    <p>Hello COder</p>
+
+
+
+    <script>
+        $("p").after("<b>After P Tag </b>");
+        
+
+        $("pre").after(function(){
+            return "<div>"+"After Pre tag"+"</div>";
+        });
+
+
+    </script>
+</body>
+</html>

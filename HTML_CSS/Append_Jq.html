@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("p").append("<b>Append One </b>");
+        });
+        $("#b2").click(function () {
+          $("ol").append("<li>Append Two</li>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Jquery Append</h1>
+    <pre>
+        The Append() Method in Jquery is used to insert some content at the end of the selected elements 
+
+        @(selector).append(content,function(index.html))
+
+        parameter: This Method accepts two parameters as mentioned above the describes below
+        @Content: It is a required parameter and is used to specify the content which is to be inserted at the end of selected elements
+        The possible value of content are HTML element, Jquery Objects and DOM elements
+
+        @Function(index,HTML):It is an optional parameter and is used to specify that will return the content to be insrerted 
+            Index: It is used to return the index position of the element 
+            Html: It is used to return the current HTML of the selected element 
+    </pre>
+
+    <p>Hello Coder</p>
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+
+    <button id="b1">Append one</button>
+    <button id="b2">Append two</button>
+  </body>
+</html>

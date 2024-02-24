@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Jquery attr</h1>
+    <pre>
+        The attr() Method in Jquery is used to set or return the attributes and values of the selected elements
+
+        To return the value of an attribute:
+        $(selector).attr(attribute)
+
+        To set the attribute and value:
+        $(selector).attr(attribute, value)
+
+        To set attribute and value using a function:
+        $(selector).attr(attribute, function(index, currentvalue))
+        
+        To set multiple attributes and values:
+        $(selector).attr({attribute:value, attribute:value, ...})
+
+        attribute: This parameter is used to specify the name of the attribute
+        value: It is used to specify the value of the attribute
+        function(index, currentvalue): It is used to specify a function that returns the attribute value to set
+        index: Index position of the element received with the help of this parameter.
+        currentvalue: It is used to receive the current attribute value of selected elements.
+    </pre>
+
+    <img src="/20190612094854-Yuvi1 (1).jpeg" alt="" width="200px" height="200px">
+    <br>
+    <button>click</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").attr("width","300");
+            })
+        })
+    </script>
+</body>
+</html>

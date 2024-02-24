@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+      p {
+        margin: 8px;
+        font-size: 35px;
+      }
+      .selected {
+        display: block;
+        border: 2px solid green;
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        padding: 20px;
+      }
+      .higlight {
+        background: yellow;
+      }
+    </style>
+  </head>
+
+  <h1>Addclass()</h1>
+  <pre>
+    The addclass method is an inbuilt method in jquery that is used to add more properties to each selected element It can also be used
+    change the property of the selected element 
+
+    <b>1)By Adding a class name directly</b>
+    here the Class name can be used directly with the element which is going to be selected
+    $(selector).addclass(classname);
+
+    <b>2)By passing a function to add a new class</b>
+    Here A function can be passed to the .addclass() for the selected element
+    $(selected).addclass(function);
+</pre>
+
+  <p>Hello</p>
+  <p>Coder</p>
+  <p>Happy</p>
+  <p>Coding</p>
+
+  <script>
+    $("p").last().addClass("selected higlight");
+  </script>
+
+  <body></body>
+</html>
