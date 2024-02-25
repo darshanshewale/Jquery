@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>Jquery html method</h1>
+    <pre>
+        The html method in jquery is used to set or return the innerHTML content of the selected element
+    </pre>
+
+    <h1>Frontend is soul of web </h1>
+    <button>Click</button>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h1").html("Hello <b>GEEKS!</b>");
+            });
+        });
+    </script>
+</body>
+</html>

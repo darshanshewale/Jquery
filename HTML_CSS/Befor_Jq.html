@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("button").before("<p>GFG:" + " A computer science portal</p>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Before Method</h1>
+    <pre>
+        The before Method in Jquery is used to add the content before the selected element
+        $(selector).before(content,funtion(index))
+    </pre>
+    <button>click here</button>
+   
+</body>
+</html>

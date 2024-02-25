@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("body").empty();
+            })
+        })
+    </script>
+    
+    <style>
+        div{
+            display: block;
+            background-color: lightgreen;
+            width: 800px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Empty Method</h1>
+    <pre>
+        The Empty method is an inbuilt method in Jquery that is used to remove all child nodes and their content for the selected elements
+        $(selector).empty()
+    </pre>
+
+    <div>
+        <h1>Happy Coding</h1>
+
+        <p>
+            Coding is an electron which keeps evolving
+        </p>
+
+        <button>click here</button>
+    </div>
+    
+</body>
+</html>

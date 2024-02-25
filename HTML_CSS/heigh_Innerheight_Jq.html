@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function()
+            {
+                let msg=" ";
+                msg+="height of div"+ $("#demo").height();
+                $("#demo").html(msg);
+            })
+        })
+    </script>
+    <style>
+        #demo
+        {
+            height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>height And Innerheight</h1>
+    <pre>
+        The height is a inbuilt method in jquery that is used to check the height of an element but it will not check the padding,border
+        and margin of the element
+        $("selector").height
+    </pre>
+
+    <div id="demo" ></div>
+    <button>click</button>
+</body>
+</html>

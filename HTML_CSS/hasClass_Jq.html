@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function()
+            {
+                alert($("p").hasClass("p1"));
+            })
+        })
+    </script>
+
+    <style>
+        div{
+            background-color: lightgreen;
+            width: 600px;
+            height: 200px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery hasClass Method</h1>
+    <pre>
+        The hasClass() is an inbuilt method in Jquery which check whether the elements with the specified class name exist or not
+        $(selector).hasclass(classname);
+    </pre>
+     
+    <div>
+        <h3>India</h3>
+        <p class="p1">India has 140 cr people</p>
+        <button>Click</button>
+    </div>
+</body>
+</html>

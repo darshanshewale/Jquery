@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script>
+       $(document).ready(function () {
+            $("button").click(function () {
+                $("p").detach();
+            });
+        });
+    </script>
+    <style>
+        body
+        {
+            display: block;
+            width: 1000px;
+            height: 250px;
+            padding: 20px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detach Method</h1>
+    <pre>
+        The detach method is an inbuilt method in jquery that removes the selected elements from the DOM tree including all text and child
+        nodes but it keeps the data and the event
+    </pre>
+     
+    <div>This is the div part</div>
+    <p>This is the first paragraph</p>
+    <p>This is the second paragraph</p>
+    <button>click</button>
+</body>
+</html>
