@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        #h {
+            border: 2px solid white;
+        }
+ 
+        p,
+        div {
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid green;
+        }
+ 
+        .border {
+            border: 2px solid red;
+        }
+ 
+        .background {
+            background: lightgrey;
+        }
+ 
+        .left,
+        .right {
+            width: 45%;
+            float: left;
+            border: 2px solid green;
+        }
+ 
+        .right {
+            margin-left: 3%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery Addback Method</h1>
+    <pre>
+        The Addback is an inbuilt method in Jquery that adds the previous set of elements to the current set
+        This method adds previous DOM tree elements to the current set and maintains them  in the internal stack 
+        which will take care of changes to the matched set of elements
+
+        .addback(selector)
+    </pre>
+
+    <div class="left">
+        <p id="h">
+            <strong>Before
+                <code>addBack()</code>
+            </strong>
+        </p>
+        <div class="before-addback">
+            <p>First Paragraph</p>
+            <p>Second Paragraph</p>
+        </div>
+    </div>
+    <div class="right">
+        <p id="h">
+            <strong>After
+                <code>addBack()</code>
+            </strong>
+        </p>
+        <div class="after-addback">
+            <p>First Paragraph</p>
+            <p>Second Paragraph</p>
+        </div>
+    </div>
+    <script>
+        $(".before-addback").find("p").addClass(
+            "background");
+        $(".after-addback").addBack("p").addClass(
+            "background");
+    </script>
+    
+</body>
+</html>

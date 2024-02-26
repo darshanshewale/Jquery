@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("div").children().css({
+                "color":"green",
+                "border":"5px solid green"
+            });
+        });
+    </script>
+
+    <style>
+        .parent *
+        {
+            display: block;
+            border: 2px solid lightgreen;
+            color: gray;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Children Method</h1>
+    <pre>
+        jquery children method is used to find all the child elements of the selected element. This children() method in Jquery
+        traverses down to a single level of the selected element and returns all child elements
+    </pre>
+
+    <div class="parent" style="width: 500px;">
+    This is the current parent !! 
+    <p>This is the first children  <span>This is grandchild</span>
+    </p>
+    <p>
+        This is second children 
+        <span>This is grandchild</span>
+    </p>
+   
+    </div>
+</body>
+</html>
