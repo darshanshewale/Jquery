@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $(".heading").eq(0).css("color","red");
+            $(".heading").eq(2).css("color","yellow");
+        })
+
+    </script>
+
+</head>
+<body>
+    <h1>Eq Method</h1>
+    <pre>
+        The eq Method is an inbuilt Method in Jquery that is used to locate the selected elements directly and returns an element 
+        with a specific index
+
+        syntax:
+        $(selector).eq(index)
+    </pre>
+
+    <h1 class="heading">First</h1>
+    <h2 class="heading">Second</h2>
+    <h3 class="heading">Third</h3>
+    <h4 class="heading">fourth</h4>
+</body>
+</html>

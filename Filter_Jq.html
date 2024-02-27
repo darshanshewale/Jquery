@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function(){
+            $("li").filter(".first,.last").css("color","red").css("background-color","yellow");
+        })
+    </script>
+</head>
+<body>
+    <h1>Filter Method</h1>
+    <pre>
+        The Jquery is a very powerful tool which helps us to incorporate a varity of DOM traversal method to select elements
+        in a document radomly or in sequential order Most of the DOM traversal method do not modify the elements whereas they filter
+        them out upon the given conditions
+    </pre>
+
+    <ul>
+        <li class="first">First</li>
+        <li class="second">second</li>
+        <li class="third">Third</li>
+        <li class="last">fourth</li>
+    </ul>
+</body>
+</html>
