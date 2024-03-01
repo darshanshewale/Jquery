@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Jquery Get Method</h1>
+    <pre>
+        In Jquery.get Method loads data fron the server by using the GET HTTP request. This method returns XMLHttpsRequest Object
+
+        $.get(url,[data],[callback],[type])
+
+        parameter:
+        url: String containing the UTL at which request is to be sent 
+        data : This is an optional parameter that represents key/value pairs that will be sent to the server.
+        callback:This optional parameter represents the function which is to be executed whenever the data is loaded successfully
+        type:This parameter represents type of data to be return to the callback function i.e "xml","script","json","html","html","jsonp" or "text"
+    </pre>
+
+    <h2>This is get request</h2>
+    <button>click here</button>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $.get(
+            "hello.txt",
+
+            function (data) {
+              $("h2").html(data);
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+</head>
+<body>
+    <h1>AjaxErro Method</h1>
+    <pre>
+        The AjaxError Method in Jquery is used to specify a function to be run when an Ajax request fails 
+
+        $(document),ajaxerror(function(event,xhr,options,exc))
+
+        parameters:
+        event:This Parameter holds the event object
+        xhr : It holds the XMLHttpRequest Object
+        Options: It contains the used options in Ajax request
+        exc:It holds the Javascript exception
+
+    </pre>
+    <script>
+        $(document).ready(function()
+        {
+            $(document).ajaxError(function()
+            {
+                alert("Ajax request fails")
+            })
+            $("#b1").click(function(){
+                $("#a1").load("hello.txt");
+            });
+
+            $("#b2").click(function(){
+                $("#a1").load("text.txt");
+            });
+        });
+    </script>
+    <div>
+        <h1>Hello</h1>
+        <h1 id="a1"></h1>
+        <button id="b1">pass</button>
+        <button id="b2">fails</button>
+
+    </div>
+
+   
+</body>
+</html>

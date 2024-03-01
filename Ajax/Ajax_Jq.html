@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+
+</head>
+<body>
+    <h1>Ajax Method</h1>
+    <pre>
+        Jquery Ajax method is used to send Ajax requestd or asynchronous HTTP requests to the servers for fetching and posting data 
+        accordingly to the requirement by specifying the requet type
+
+        $ajax({name:value,name:value,..})
+        
+        parameters:
+        @type: used to specify the typennof the requet as post or get
+        @url : used to specify the url to send the request to 
+        @username : used to specify a username to be used in an HTTP access authentication request 
+        @xhr : used to specify the XMLHttpRequest object 
+        @async : default value is true. request should be handled asynchronous or not
+        @beforeSend : It is a function that is to be run before the request is sent 
+        @data type : The data type expected of the sever response 
+        @error(xhr , status ,error) : used to run if the request fails 
+        @global : used to specify whether or not to trigger global ajax event handles for the request 
+        @ifmodified :  It'default value is false It is used to specify whether a request is only succesful if the response has changed 
+        since the last request
+        @jsonp: A string overriding the callback function in a jsonp request.
+        @jsonpCallback: It is used to specify a name for the callback function in a jsonp request.
+        @cache: It’s default value is true. It indicates whether the browser should cache the requested pages.
+        @complete(xhr, status): It is a function which is to be run when the request is being finished.
+        @contentType: It’s default value is: “application/x-www-form-urlencoded” and it is used when data send to the server.
+        @context: It is used to specify the “this” value for all AJAX related callback functions.
+        @data: It is used to specify data to be sent to the server.
+        @dataFilter(data, type): It is used to handle the raw response data of the XMLHttpRequest.
+        @password: It is used to specify a password to be used in an HTTP access authentication request.
+        @processData: It’s default value is true. It is used to specify whether or not data sent with the request should be transformed into a query string.
+        @scriptCharset: It is used to specify the charset for the request.
+        @success(result, status, xhr): It is to be run when the request succeeds.
+        @timeout: It is the local timeout for the request. It measured in terms of milliseconds.
+        @traditional: It is used to specify whether or not to use the traditional style of param serialization
+    </pre>
+
+    <h1>Happy Coding</h1>
+
+    <h1 id="a1"></h1>
+    <button>click</button>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $.ajax({
+                    url:"hello.txt",
+                    success:function(result)
+                    {
+                        $("#a1").html(result);
+                    }
+                })
+            })
+        })
+    </script>
+
+    
+      
+</body>
+</html>

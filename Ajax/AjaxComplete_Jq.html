@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+    <script>
+        $(document).ready(function()
+        {
+            $(document).ajaxComplete(function(){
+                alert("ajax request completes")
+            });
+            $("button").click(function()
+            {
+                $('#a1').load("hello.txt");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>AjaxComplete Method</h1>
+    <pre>
+        The AjaxComplete method is used to specify a funtion to be run when an Ajax request Completes 
+
+        $(document).AjaxComplete(function(event,xhr,options))
+
+        parameter:
+
+        event : It contains the event object 
+        xhr : It contains the XMLHttpRequest Object
+        Options: It contains the used options in Ajax request 
+    </pre>
+    <div>
+        <h1>
+            Hello
+        </h1>
+        <p id="a1">
+            Happy Coding
+        </p>
+    </div>
+    <button>Change Content</button>
+</body>
+</html>
