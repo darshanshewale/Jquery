@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>AjaxSetUp method</h1>
+    <pre>
+        The ajaxSetUp method in Query is used to set the default values for future Ajax requests
+
+        $.ajaxSetup({name:value,name:value,..})
+    </pre>
+
+    <h1> Happy Coding</h1>
+    <button>click</button>
+    <h3></h3>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $.ajaxSetup({
+                    url:"hello.txt",
+                    success:function(result)
+                    {
+                        $("h3").html(result);
+                    }
+                })
+                $.ajax();
+            })
+        })
+    </script>
+</body>
+</html>

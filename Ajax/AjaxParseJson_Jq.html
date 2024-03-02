@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+    <h1>ParseJson Method</h1>
+    <pre>
+        This ParseJson Method in Jquery takes a well-formed JSON string and returns the resulting javascript value
+
+        jquery.parseJSON(json)
+
+        parameter: The parseXML() Method accepts only one parameter that is mentioned above the described below:
+
+        json:This parameter is the well-formed JSON string to be parsed.
+
+        @string
+        @Number
+        @Object
+        @Array
+        @Boolean 
+    </pre>
+
+    <h1>Welcome</h1>
+    <b id="a"></b>
+
+    <script>
+        let txt = '{"name":"John", "age":30, "city":"New York"}'
+        let obj = jQuery.parseJSON(txt);
+        document.getElementById("a").innerHTML =
+            "Object Name : " + obj.name +
+            "<br> Object Age : " + obj.age;
+    </script>
+</body>
+</html>
