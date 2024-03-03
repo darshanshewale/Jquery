@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>AjaxStop Method</h1>
+    <pre>
+        The AjaxStop() method is used to specify a function to be run when Ajax requests have been completed
+
+        $(document).AjaxStop(function())
+
+    </pre>
+    <h1>Ajax stop checking</h1>
+    <h2 id="a1"></h2>
+    <button>click here</button>
+
+    <script>
+        $(document).ready(function(){
+            $(document).ajaxStop(function(){
+                alert("Ajax request is stop");
+            })
+            $("button").click(function()
+            {
+                $("#a1").load("hello.txt");
+            });
+        });
+    </script>
+    
+</body>
+</html>

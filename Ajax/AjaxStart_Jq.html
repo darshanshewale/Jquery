@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <h1>jquery AjaxStart() Method</h1>
+    <pre>
+        The AjaxStart Method is used to specify a function to be run when an Ajax request starts
+
+        $(document).ajaxstart(function())
+
+        parameter: It takes only one parameter
+        function(): it specifies the function to run when the ajax request starts
+    </pre>
+
+    <h1>Welcome</h1>
+    <h2 id="a1">Happy Coding</h2>
+    <button>CLick here</button>
+
+    <script>
+        $(document).ready(function(){
+            $(document).ajaxStart(function(){
+                alert("Ajax request started");
+            })
+            $("button").click(function()
+            {
+                $("#a1").load("hello.txt");
+            })
+        })
+    </script>
+</body>
+</html>

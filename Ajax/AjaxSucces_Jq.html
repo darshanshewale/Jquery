@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1>AJaxSuccess Method</h1>
+    <pre>
+        The AjaxSuccess Method in Jquery is used to specify the function to be run when an Ajax request completed successfully.
+
+        $(document).AjaxSuccess(function(event,xhr,options))
+    </pre>
+
+    <h1>Welcome</h1>
+    <h2>Happy Coding</h2>
+    <button>click here</button>
+
+    <script>
+        $(document).ready(function(){
+            $(document).ajaxSuccess(function()
+            {
+                alert("Ajax success request completed");
+            })
+            $("button").click(function()
+            {
+                $("h2").load("hello.txt");
+            })
+        })
+    </script>
+</body>
+</html>

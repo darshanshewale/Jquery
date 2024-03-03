@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    
+</head>
+<body>
+    <h1>getScript Method</h1>
+    <pre>
+        The getScript method in jquery is used to run a javascript using AJAX HTTP GET request
+
+        $(selector).getScript(url ,success(response,status))
+
+        parameter:
+        url:It is a required parameter It holds the url to whom the request is sent to
+        success(response,status): it is optional parameter It holds the function to run if the request got succesful
+        Response: It holds the result data from thr request
+        status: It holds the status of the request like"success","notmodified","error","timeout", or "parseerror"
+    </pre>
+
+    <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $.getScript("test.js");
+            });
+        });
+    </script>
+
+    <h1>Welcome</h1>
+    <button>get javascript using an AJAX  HTTP GET Request </button>
+</body>
+</html>
