@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <h1>Param Method</h1>
+    <pre>
+        The param Method in Jquery is used to create a serialized representation of an object 
+
+        $.param(Obecjt,trad)
+
+        parameter:
+        Object: It is mandatory parameter this is used to specify an array or object to serialize.
+        trad:It is optional parameter and is used to specify whether or not to use the traditional style of param serialization
+    </pre>   
+    <h1>Happy Coding</h1>
+    <button>Click here</button>
+    <div></div>
+    <script>
+        $(document).ready(function(){
+            personObj=new Object();
+            personObj.Firstword="Happy";
+            personObj.Secondword="Coding";
+            
+            $("button").click(function(){
+                $("div").text($.param(personObj));
+            })
+
+
+
+
+        })
+    </script> 
+</body>
+</html>
