@@ -24,7 +24,7 @@ To clone this repository:
 To download this repository, click on the green “Code” button on the GitHub page and select “Download ZIP”. Then, extract the ZIP file and open the folder in your code editor.
 
 
-# Contributing
+# Contributing 🤝
 If you want to contribute to this project, you are welcome to do so. You can submit issues, pull requests, or feedback to improve the quality and the content of this project. Please follow these guidelines when contributing:
 
 Use clear and descriptive titles and messages for your issues and pull requests. Test your code before submitting it. Add comments to explain your code logic and changes.
